@@ -76,7 +76,7 @@
             <div class="inline-block px-3 py-1 bg-blue-600 text-[10px] font-bold rounded mb-4 uppercase">Expert Analysis</div>
             <h1 class="text-4xl font-bold mb-4">언론사 AI(AX) 도입 현황 대시보드</h1>
             <p class="text-slate-400 text-lg max-w-3xl leading-relaxed">
-                MBC CMS 고도화를 위한 19개 주요 매체의 전수 조사 데이터입니다. <br>
+                MBC CMS 고도화를 위한 24개 주요 매체의 전수 조사 데이터입니다. <br>
                 단순 홍보 기사가 아닌, <strong>실제 AI 서비스가 구동 중인 URL</strong>을 직접 확인하여 벤치마킹하세요.
             </p>
         </div>
@@ -88,7 +88,7 @@
         <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             <div class="lg:col-span-2 bg-white rounded-3xl p-8 border border-slate-200 shadow-sm">
                 <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
-                    <span class="p-2 bg-blue-50 text-blue-600 rounded-lg">📊</span> 주요 기능 채택률 (n=19)
+                    <span class="p-2 bg-blue-50 text-blue-600 rounded-lg">📊</span> 주요 기능 채택률 (n=24)
                 </h2>
                 <div class="chart-container">
                     <canvas id="mainAdoptionChart"></canvas>
@@ -341,6 +341,46 @@
                 web: ["AI 기상캐스터/아나운서", "개인화 뉴스 추천"],
                 insight: "(자사) 영상 메타데이터화 능력은 탁월하나, 타사 대비 '텍스트 요약' 및 '제목 추천' 기능의 CMS 내재화가 필요합니다.",
                 ui: "mbc"
+            },
+            {
+                id: "mbn", name: "MBN", type: "broadcast", icon: "📺",
+                featureUrl: "https://www.mediatoday.co.kr/news/articleView.html?idxno=327357", // MBN 'AI 기반 방송사' 선언 - 미디어오늘 상세 보도
+                cms: ["대선 개표방송 CG 65% AI 제작 (비용 80% 절감)", "방송언어 분석 AI (비속어·차별표현 자동 검출)"],
+                web: ["AI 김주하 앵커 (국내 방송 최초 메인뉴스 AI 앵커)", "'AI 포크뉴스' 평일 오전/오후 AI TTS 정규 편성", "'뉴스7' 유튜브 AI 영어 더빙, 예능 일본어 자막 자동"],
+                insight: "종편 중 AI 도입을 가장 공격적으로 '브랜딩'한 사례. 보도·예능·CG·더빙까지 전 영역에 생성형 AI를 수평 적용 중이라 CMS 레벨의 통합 관리 도구가 불가피합니다.",
+                ui: "audio"
+            },
+            {
+                id: "ebs", name: "EBS", type: "broadcast", icon: "📺",
+                featureUrl: "https://www.ohmynews.com/NWS_Web/Series/series_premium_pg.aspx?CNTN_CD=A0003207873", // EBS 사장 인터뷰 - 2026 AX 전략과 AI 콘텐츠 제작 성과
+                cms: ["전직원 AI 영상제작 연수 완료, 주당 11편 AI 콘텐츠 제작 (제작비 1/10~1/20)", "100만 디지털 문항 DB → AI 학습용 데이터 판매 파이프라인"],
+                web: ["<AI 고전 역사를 바꾼 100책> (애덤 스미스 AI 복원 주 5회 편성)", "<AI 인물한국사>·<AI 청소년 TV문학관> 시리즈 정규 편성"],
+                insight: "교육 도메인 자산(100만 문항)을 AI 학습 데이터로 재수익화한 유일한 공영방송. 2023년 12억→2026년 100억+ 매출로 'AI 콘텐츠 제작 + 데이터 판매' 이원화에 성공했습니다.",
+                ui: "robot"
+            },
+            {
+                id: "jtbc", name: "JTBC", type: "broadcast", icon: "📺",
+                featureUrl: "https://www.journalist.or.kr/news/article.html?no=57367", // 한국기자협회 - JTBC 'Vision J' 및 AI 팩트체크 소개
+                cms: ["'Vision J' 실시간 득표율·당선확률 AI 예측 시스템", "TV토론 실시간 팩트체크 AI 기자 보조 (대선 토론 2회 38건 즉시 검증)"],
+                web: ["대선 특설 페이지 AI 예측 시각화 (평시 대비 20배 트래픽)", "메타분석 예측조사 공개"],
+                insight: "종편 중 유일하게 '저널리즘 신뢰도(팩트체크·예측)'에 AI를 붙여 차별화한 방송사. 제작 효율보다 편집권·분석력 강화 방향이라 MBC 선거·개표방송 벤치마킹에 직접 유효합니다.",
+                ui: "verify"
+            },
+            {
+                id: "channela", name: "채널A", type: "broadcast", icon: "📺",
+                featureUrl: "https://www.journalist.or.kr/news/article.html?no=58812", // 한국기자협회 - 동아미디어그룹 AI CMS 고도화 소개
+                cms: ["영상 아카이브 AI 메타데이터 자동 태깅", "매거진 기사 → 5분 방송 스크립트 초안 자동 변환"],
+                web: ["(현 단계 내부 파이프라인 중심, 독자 노출형 AI 기능은 미공개)"],
+                insight: "동아미디어그룹 계열답게 '신문→방송 콘텐츠 전환'과 '아카이브 검색 효율화'를 노린 백엔드형 전략. 방송사 CMS에서 필요한 원본 영상 메타데이터화의 실전 사례입니다.",
+                ui: "summary"
+            },
+            {
+                id: "tvchosun", name: "TV조선", type: "broadcast", icon: "📺",
+                featureUrl: "https://www.gttkorea.com/news/articleView.html?idxno=17534", // 지티티코리아 - TV조선 PERSO.ai 기반 AI 휴먼 도입
+                cms: ["이스트소프트 PERSO.ai 기반 AI 휴먼 영상 제작·오토 더빙 파이프라인", "스튜디오티나 협업 VCR 재연/자료화면 생성형 AI 파이프라인"],
+                web: ["<모-던 인물史 미스터.리> - 김영삼·김대중 전 대통령 AI 음성·억양 복원 본방 송출", "<중증건강센터> 예능 AI 재연 영상 VOD 공개"],
+                insight: "뉴스보다 '다큐·예능' 콘텐츠에 선택적으로 AI 적용. 자체 개발 대신 외부 전문기업(이스트소프트, 스튜디오티나) 협업형 도입이라 빠른 파일럿이 가능한 구조입니다.",
+                ui: "verify"
             }
         ];
 
@@ -496,7 +536,7 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: { legend: { display: false } },
-                    scales: { x: { max: 19, grid: { display: false } }, y: { grid: { display: false } } }
+                    scales: { x: { max: 24, grid: { display: false } }, y: { grid: { display: false } } }
                 }
             });
         };
