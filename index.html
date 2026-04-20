@@ -192,7 +192,7 @@
         const mediaDatabase = [
             {
                 id: "chosun", name: "조선일보", type: "newspaper", icon: "📰",
-                featureUrl: "https://www.chosun.com/national/national_general/2024/05/23/V7DTVDNDRRD5DEDL2Z6K3M54UY/", // AI 요약 포함된 실제 기사
+                featureUrl: "https://www.chosun.com/", // 조선일보 메인 - Arc Publishing 기반 AI 교열/번역/기사생성 순차 배포
                 cms: ["Arc Publishing 기반 AI 관련 기사 자동 매칭", "CMS 내 메타 태그 자동 생성"],
                 web: ["AI 3줄 요약 (기사 본문 상단 고정)", "텍스트 음성 변환(TTS)"],
                 insight: "조선은 기사 상단에 'AI 요약' 버튼을 명시적으로 두어 가독성을 극대화했습니다.",
@@ -200,7 +200,7 @@
             },
             {
                 id: "joongang", name: "중앙일보", type: "newspaper", icon: "📰",
-                featureUrl: "https://www.joongang.co.kr/pollin", // 개인화 서비스 Pollin
+                featureUrl: "https://www.joongang.co.kr/", // 중앙일보 메인 - 국내 최초 AI 뉴스 검색 ('60년의 기사가 답해드립니다')
                 cms: ["JAM CMS: 클릭률 예측 기반 제목 추천", "실시간 A/B 테스트"],
                 web: ["데이터 기반 개인화 큐레이션", "댓글 클린봇"],
                 insight: "중앙은 '제목'에 AI를 도입하여 트래픽 효율을 극대화하는 CMS 전략을 취합니다.",
@@ -208,7 +208,7 @@
             },
             {
                 id: "donga", name: "동아일보", type: "newspaper", icon: "📰",
-                featureUrl: "https://www.donga.com/news/Society/article/all/20240101/122854321/1", // D-Voice 소개 및 구현 페이지
+                featureUrl: "https://www.donga.com/", // 동아닷컴 메인 - AI 개인화 뉴스피드 '오늘의 뉴스' 추천
                 cms: ["AI 기반 기사 교정교열 시스템", "아카이브 자동 검색"],
                 web: ["D-Voice (고유 음성 TTS)", "3줄 요약"],
                 insight: "동아는 자체 보이스 모델링을 통해 브랜드 아이덴티티를 강화한 TTS를 제공합니다.",
@@ -216,7 +216,7 @@
             },
             {
                 id: "hankyung", name: "한국경제", type: "newspaper", icon: "📈",
-                featureUrl: "https://www.hankyung.com/robot", // 로봇뉴스 전용 섹션
+                featureUrl: "https://www.hankyung.com/industry/robot-future", // 한경 '로봇·미래' 공식 섹션 - 로봇/AI 자동화 기사 허브
                 cms: ["상장사 공시 AI 분석 및 속보 초안 자동 생성", "그래픽 자동 생성"],
                 web: ["실시간 AI 로봇 뉴스", "다국어 번역 시스템"],
                 insight: "한경은 '데이터→기사'의 자동화 흐름이 가장 완벽하게 구축되어 있습니다.",
@@ -224,7 +224,7 @@
             },
             {
                 id: "maekyung", name: "매일경제", type: "newspaper", icon: "📈",
-                featureUrl: "https://www.mk.co.kr/news/society/10904321", // MK Summary 적용 기사
+                featureUrl: "https://www.mk.co.kr/", // 매일경제 메인 - Perplexity 제휴 'AI 지식검색' 상단 통합 ('매경AX' 전략)
                 cms: ["외신 실시간 AI 모니터링 및 요약 대시보드", "자동 태깅"],
                 web: ["M-Summary (AI 요약)", "가상인간 아나운서"],
                 insight: "매경은 외부 정보를 수집하여 기자에게 브리핑해주는 CMS 도우미 역할에 강합니다.",
@@ -232,7 +232,7 @@
             },
             {
                 id: "kbs", name: "KBS", type: "broadcast", icon: "📺",
-                featureUrl: "https://news.kbs.co.kr/special/ai/index.html", // KBS AI 전용관 (VVERT 등 소개)
+                featureUrl: "https://www.vvertigo.com/", // KBS 개발 'vVERTIGO' - AI 기반 멀티뷰 8K 영상 제작 솔루션 공식 사이트
                 cms: ["VVERT: 딥페이크 검증 시스템", "영상 자막 자동 생성(Whisper)"],
                 web: ["재난 정보 자동 그래픽 변환", "AI 아카이브 검색"],
                 insight: "영상 신뢰도가 중요한 방송사는 '검증(VVERT)' 기능을 CMS 인제스트 단계에 넣어야 합니다.",
@@ -240,7 +240,7 @@
             },
             {
                 id: "sbs", name: "SBS", type: "broadcast", icon: "📺",
-                featureUrl: "https://news.sbs.co.kr/news/endPage.do?news_id=N1007622833", // AI 기술 적용 보도
+                featureUrl: "https://programs.sbs.co.kr/special/sbstechpr/basicinfo/70424", // SBS 공식 '방송기술: 인공지능과 빅데이터 분석' 소개 페이지
                 cms: ["AI 자동 클립 분할 및 장면 태깅", "AI 오디오 더빙"],
                 web: ["스브스뉴스 AI 그래픽 생성", "개인화 뉴스 피드"],
                 insight: "숏폼 콘텐츠 제작 효율을 높이기 위한 '영상 자동 클립'은 방송사 CMS의 필수입니다.",
@@ -248,7 +248,7 @@
             },
             {
                 id: "ytn", name: "YTN", type: "broadcast", icon: "📺",
-                featureUrl: "https://www.ytn.co.kr/search/index.php?q=AI+%EC%95%B8%EC%BB%A4", // AI 앵커 검색 결과
+                featureUrl: "https://science.ytn.co.kr/program/view.php?mcd=0082&key=202309131138590715", // YTN 창립 30주년 AI 버츄얼 휴먼(와이고/와이온) 공식 공개 기사
                 cms: ["제보 영상 AI 업스케일링", "AI 앵커용 텍스트 생성"],
                 web: ["24시간 AI 앵커 시스템", "실시간 속보 자막 자동 생성"],
                 insight: "야간이나 긴급 상황 시 AI 앵커가 즉시 대본을 읽게 하는 시스템은 신속성을 보장합니다.",
@@ -256,7 +256,7 @@
             },
             {
                 id: "yonhap", name: "연합뉴스", type: "agency", icon: "📡",
-                featureUrl: "https://www.yna.co.kr/view/AKR20240315082100005", // 로봇 저널리즘 기사 예시
+                featureUrl: "https://www.yna.co.kr/", // 연합뉴스 메인 - BERT 기반 AI 기사 요약 서비스 상시 노출
                 cms: ["Symphony CMS: 데이터 기반 로봇 뉴스 자동 발송", "다국어 번역"],
                 web: ["B2B 전용 맞춤형 뉴스 피드", "AI 사진 분류"],
                 insight: "통신사는 대량의 데이터를 표준 기사로 바꾸는 '템플릿 기반 로봇' 기술이 핵심입니다.",
@@ -264,7 +264,7 @@
             },
             {
                 id: "infomax", name: "연합인포맥스", type: "agency", icon: "💰",
-                featureUrl: "https://news.einfomax.co.kr/news/articleList.html?sc_sub_section_code=S2N37", // AI/로봇 섹션
+                featureUrl: "https://news.einfomax.co.kr/", // 연합인포맥스 메인 - 생성형 AI 방송 플랫폼 '인포X' 운영사
                 cms: ["금융 데이터 실시간 AI 리포트 생성", "변동성 자동 감지"],
                 web: ["단말기용 AI 뉴스 브리핑", "데이터 시각화 AI"],
                 insight: "전문 금융 데이터를 자연어로 풀어주는 금융 특화 AI 모델을 참고할 필요가 있습니다.",
@@ -272,7 +272,7 @@
             },
             {
                 id: "cbs", name: "CBS", type: "broadcast", icon: "📻",
-                featureUrl: "https://www.nocutnews.co.kr/news/6105844", // STT 적용된 노컷뉴스
+                featureUrl: "https://m.nocutnews.co.kr/story/S250715/", // 노컷뉴스 공식 AI 특집 인터랙티브 시리즈 'AI 패러독스'
                 cms: ["라디오 실시간 STT 전사 보조", "노컷뉴스 요약 도구"],
                 web: ["AI 팟캐스트 추천", "라디오-뉴스 연동 검색"],
                 insight: "오디오 자산을 텍스트로 전환하여 검색 가시성을 높이는 전략이 훌륭합니다.",
@@ -280,7 +280,7 @@
             },
             {
                 id: "kyunghyang", name: "경향신문", type: "newspaper", icon: "📰",
-                featureUrl: "https://www.khan.co.kr/national/national-general/article/202312061030001", // STT 도입 뉴스
+                featureUrl: "https://www.khan.co.kr/article/202409261520001", // 경향신문 '생성형 AI를 활용한 뉴스룸 혁신' - STT/번역/교정 도구 실사용 기사
                 cms: ["인터뷰 음성 STT 변환 보조", "디지털 아카이브 분류"],
                 web: ["3줄 요약 서비스", "개인화 뉴스레터"],
                 insight: "기자의 단순 노동(전사 작업)을 줄여주는 것이 AX의 첫 번째 목표여야 함을 보여줍니다.",
@@ -288,7 +288,7 @@
             },
             {
                 id: "hani", name: "한겨레", type: "newspaper", icon: "📰",
-                featureUrl: "https://www.hani.co.kr/arti/society/society_general/1125432.html", // AI 요약 적용 기사
+                featureUrl: "https://www.hani.co.kr/arti/economy/it", // 한겨레 IT/AI 섹션 - AI 관련 최신 기사 허브
                 cms: ["아카이브 사진 AI 자동 태깅", "구독 관리 AI"],
                 web: ["AI 요약 및 추천", "개인화 뉴스레터"],
                 insight: "CMS 내의 사진 데이터베이스에 AI 태깅을 도입하여 검색 효율을 극대화했습니다.",
@@ -296,7 +296,7 @@
             },
             {
                 id: "seoul", name: "서울신문", type: "newspaper", icon: "📰",
-                featureUrl: "https://www.seoul.co.kr/news/newsView.php?id=20231124500001", // OCR/아카이브 뉴스
+                featureUrl: "https://m.seoul.co.kr/news/searchList.php?keyword=%EB%94%94%EC%A7%80%ED%84%B8+%EC%95%84%EC%B9%B4%EC%9D%B4%EB%B8%8C", // 서울신문 '디지털 아카이브' 검색 결과 - OCR 디지털화 기사 허브
                 cms: ["과거 지면 OCR 디지털화", "기사 메타데이터 자동 추출"],
                 web: ["AI 뉴스 읽어주기", "지면 보기 내 검색"],
                 insight: "수십 년 된 종이 신문을 텍스트로 바꾸는 OCR 기술은 언론사 자산화의 핵심입니다.",
@@ -304,7 +304,7 @@
             },
             {
                 id: "kmib", name: "국민일보", type: "newspaper", icon: "📰",
-                featureUrl: "https://www.kmib.co.kr/article/view.asp?arcid=0019000000", // 댓글 클린봇 기사
+                featureUrl: "https://www.kmib.co.kr/article/view.asp?arcid=1750668896", // 국민일보 'AI 생성 댓글, 특유의 말투 있다' - KAIST XDAC 댓글 탐지 기술 기사
                 cms: ["AI 기반 댓글 관리/필터링", "카테고리 자동 분류"],
                 web: ["맞춤형 AI 추천", "기사 요약"],
                 insight: "부적절한 댓글을 AI가 선제적으로 차단하여 플랫폼의 청정성을 유지합니다.",
@@ -312,7 +312,7 @@
             },
             {
                 id: "segye", name: "세계일보", type: "newspaper", icon: "📰",
-                featureUrl: "https://www.segye.com/newsView/20231225500001", // 오디오 뉴스 서비스
+                featureUrl: "https://www.segye.com/newsView/20260126518749", // 세계일보 창간 37주년 'AI 기반 뉴스 제작 시스템 도입' 공식 선언문
                 cms: ["AI 음성 합성 통합 관리", "태그 자동 추출"],
                 web: ["오디오 중심 뉴스 서비스", "AI 큐레이션"],
                 insight: "기사를 읽어주는 TTS가 서비스 곳곳에 잘 녹아있습니다.",
@@ -320,7 +320,7 @@
             },
             {
                 id: "yonhaptv", name: "연합뉴스TV", type: "broadcast", icon: "📺",
-                featureUrl: "https://www.yonhapnewstv.co.kr/news/MYH20240315012300038", // 실시간 자막 보도
+                featureUrl: "https://www.yonhapnewstv.co.kr/", // 연합뉴스TV 메인 - 실시간 방송 자동자막 시스템 가동
                 cms: ["실시간 방송 자막 자동 생성", "영상 인물 자동 분류"],
                 web: ["AI 앵커 브리핑", "모바일 특화 AI 요약"],
                 insight: "방송 도중 실시간으로 오디오를 분석해 하단 자막을 뽑는 시스템이 특징입니다.",
@@ -328,7 +328,7 @@
             },
             {
                 id: "mbc", name: "MBC", type: "broadcast", icon: "📺",
-                featureUrl: "https://imnews.imbc.com/more/ai/", // MBC AI 관련 페이지
+                featureUrl: "https://imnews.imbc.com/replay/2026/nwtoday/article/6811175_37012.html", // MBC 뉴스투데이 'AI 도입한 북한 일기예보' - AI 기상 시스템 보도
                 cms: ["영상 오디오 실시간 STT 추출", "아카이브 인물/장면 인식"],
                 web: ["AI 기상캐스터/아나운서", "개인화 뉴스 추천"],
                 insight: "(자사) 영상 메타데이터화 능력은 탁월하나, 타사 대비 '텍스트 요약' 및 '제목 추천' 기능의 CMS 내재화가 필요합니다.",
