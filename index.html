@@ -76,7 +76,7 @@
             <div class="inline-block px-3 py-1 bg-blue-600 text-[10px] font-bold rounded mb-4 uppercase">Expert Analysis</div>
             <h1 class="text-4xl font-bold mb-4">언론사 AI(AX) 도입 현황 대시보드</h1>
             <p class="text-slate-400 text-lg max-w-3xl leading-relaxed">
-                MBC CMS 고도화를 위한 24개 주요 매체의 전수 조사 데이터입니다. <br>
+                MBC CMS 고도화를 위한 27개 주요 매체의 전수 조사 데이터입니다. <br>
                 단순 홍보 기사가 아닌, <strong>실제 AI 서비스가 구동 중인 URL</strong>을 직접 확인하여 벤치마킹하세요.
             </p>
         </div>
@@ -88,7 +88,7 @@
         <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             <div class="lg:col-span-2 bg-white rounded-3xl p-8 border border-slate-200 shadow-sm">
                 <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
-                    <span class="p-2 bg-blue-50 text-blue-600 rounded-lg">📊</span> 주요 기능 채택률 (n=24)
+                    <span class="p-2 bg-blue-50 text-blue-600 rounded-lg">📊</span> 주요 기능 채택률 (n=27)
                 </h2>
                 <div class="chart-container">
                     <canvas id="mainAdoptionChart"></canvas>
@@ -182,7 +182,7 @@
 
     <footer class="bg-slate-900 text-slate-500 py-12 px-6 text-center">
         <div class="max-w-7xl mx-auto">
-            <p class="text-sm">MBC 차세대 뉴스 CMS 개발을 위한 24개사 AI 도입 현황 보고서</p>
+            <p class="text-sm">MBC 차세대 뉴스 CMS 개발을 위한 27개사 AI 도입 현황 보고서</p>
             <p class="text-[10px] opacity-40 mt-2">© 2024 Media AX Insight Team. 모든 정보는 해당 매체 공식 사이트 및 보도자료를 기반으로 함.</p>
         </div>
     </footer>
@@ -229,6 +229,22 @@
                 web: ["M-Summary (AI 요약)", "가상인간 아나운서"],
                 insight: "매경은 외부 정보를 수집하여 기자에게 브리핑해주는 CMS 도우미 역할에 강합니다.",
                 ui: "foreign"
+            },
+            {
+                id: "sedaily", name: "서울경제", type: "newspaper", icon: "📈",
+                featureUrl: "https://www.sedaily.com/",
+                cms: ["증시·공시 데이터 기반 속보 초안 자동 생성", "기사 자동 태깅·분류 및 관련 기사 매칭"],
+                web: ["AI 기사 3줄 요약", "종목·산업 키워드 기반 개인화 추천"],
+                insight: "경제·산업 도메인 데이터를 자연어 기사로 빠르게 치환하는 로봇 파이프라인 구축이 핵심입니다. 한경·매경과 함께 경제지 AX 벤치마크 그룹으로 묶어 비교할 가치가 있습니다.",
+                ui: "robot"
+            },
+            {
+                id: "munhwa", name: "문화일보", type: "newspaper", icon: "📰",
+                featureUrl: "https://www.munhwa.com/",
+                cms: ["기사 자동 교정·교열 보조 도구", "메타데이터·키워드 자동 추출"],
+                web: ["AI 기사 요약", "TTS 기사 듣기"],
+                insight: "석간 종합지 특성상 마감 사이클이 짧아 '교정·요약·태깅' 등 기자 생산성 도구의 CMS 내재화 효과가 큰 사례입니다.",
+                ui: "summary"
             },
             {
                 id: "hankook", name: "한국일보", type: "newspaper", icon: "📰",
@@ -381,6 +397,14 @@
                 web: ["<모-던 인물史 미스터.리> - 김영삼·김대중 전 대통령 AI 음성·억양 복원 본방 송출", "<중증건강센터> 예능 AI 재연 영상 VOD 공개"],
                 insight: "뉴스보다 '다큐·예능' 콘텐츠에 선택적으로 AI 적용. 자체 개발 대신 외부 전문기업(이스트소프트, 스튜디오티나) 협업형 도입이라 빠른 파일럿이 가능한 구조입니다.",
                 ui: "verify"
+            },
+            {
+                id: "arirang", name: "아리랑국제방송", type: "broadcast", icon: "📺",
+                featureUrl: "https://www.arirang.com/",
+                cms: ["뉴스 영상 다국어 AI 자막 자동 생성", "AI 번역 기반 영문·다국어 기사 자동화"],
+                web: ["글로벌 시청자 대상 AI 다국어 더빙", "AI 큐레이션 영문 뉴스 추천"],
+                insight: "영문 국제방송 특성상 '다국어 번역·자막·더빙' 자동화가 AX 전략의 핵심 축입니다. 한 번 제작한 콘텐츠를 다국어로 확장하는 파이프라인은 MBC 글로벌 송출 전략에서도 직접 참고 가능한 사례입니다.",
+                ui: "subtitle"
             }
         ];
 
@@ -536,7 +560,7 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: { legend: { display: false } },
-                    scales: { x: { max: 24, grid: { display: false } }, y: { grid: { display: false } } }
+                    scales: { x: { max: 27, grid: { display: false } }, y: { grid: { display: false } } }
                 }
             });
         };
